@@ -69,7 +69,6 @@ class MultiTableForm(ctk.CTk):
         except Exception as ex:
             self.displayBox.insert("0.0", "Please enter lenght of the password")
 
-# function starts here
 if __name__ == "__main__":
     app = MultiTableForm()
     app.mainloop()
