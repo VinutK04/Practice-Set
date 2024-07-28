@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinut Kumbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior:smooth;
+    }
+
+    body {
+        background-color: rgb(208, 205, 205);
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(208, 196, 196);
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: rgb(79, 79, 79);
+        font-size: 1.01rem;
+    }
+
+    main hr {
+        border: 0;
+        background: rgb(163, 161, 161);
+        height: 1.2px;
+        margin: 40px 85px;
+    }
+
+    .left {
+        font-size: 5rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .firstsection>div {
+        width: 30%;
+    }
+
+    .leftsection {
+        font-size: 3rem;
+    }
+
+    .rightsection img {
+        width: 110%;
+    }
+
+    .color {
+        color: gray;
+    }
+
+    #element {
+        color: gray;
+    }
+
+    .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondsection h1 {
+        font-size: 2rem;
+    }
+
+    .secondsection p {
+        font-size: 1.3rem;
+        margin: 25px;
+    }
+
+    .thirdsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">VK</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#second">Profile</a></li>
+                    <li><a href="#third">Past Exp</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="color">Vinut</span>
+                <div>and I'm a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="/develop.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection" id="second">
+            <h1>About</h1>
+            <p>Hello!</p>
+            <p>
+                I'm Vinut, a dedicated software developer with a passion for Python Development. Currently pursuing my
+                MCA from Chandigarh University, I bring 3 years of valuable IT experience, specializing in Python
+                programming and networking.
+            </p>
+            <p>
+                In my current role as a Senior System Associate at Infosys Ltd, I have honed my skills in networking
+                domains such as LAN, WAN, Network Device Monitoring, and Troubleshooting. Additionally, I have spent a
+                year working extensively with Python, leveraging its power to develop efficient solutions.
+            </p>
+            <p>
+                My proficiency extends beyond Python, encompassing key programming concepts like OOPS, as well as
+                Django, JavaScript, HTML/CSS, and DBMS. I thrive on leveraging my programming expertise to create
+                innovative and robust solutions.
+            </p>
+            <p>
+                I am actively seeking opportunities to apply my programming skills in Python and contribute to impactful
+                projects. If you have any queries or potential collaborations, please don't hesitate to reach out and
+                connect.
+            </p>
+
+        </section>
+        <hr>
+        <section class="thirdsection" id="third">
+            <span class="color">What am doin' now..</span>
+            <h1>Work experience</h1>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front End Developer.','Python Developer.', 'Network Engineer.'],
+            typeSpeed: 50
+        })
+    </script>
+</body>
+
+</html>
