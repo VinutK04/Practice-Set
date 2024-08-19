@@ -1,10 +1,10 @@
 def my_range(start=None, stop=None, step=None):
-    if stop == None and step == None:
+    if start != None and stop == None and step == None:
         stop = start
-        counter = 0
-        while counter < stop:
-            yield counter
-            counter += 1
+        start = 0
+        while start < stop:
+            yield start
+            start += 1
     
     if start != None and stop != None and step == None:
         while start < stop:
