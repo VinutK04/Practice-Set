@@ -39,3 +39,8 @@ print("\nSalary statistics for each location:")
 for location, stats in location_stats.items():
     avg_salary = stats["sum"] / stats["count"]
     print(f"{location}: Min: {stats['min']}, Max: {stats['max']}, Avg: {avg_salary}")
+
+
+# input_list = [(1, 3), (2, 1), (3, 4)]
+# sorted_list = sorted(input_list, key=lambda x: x[1])
+# print(sorted_list)
